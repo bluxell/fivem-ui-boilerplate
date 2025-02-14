@@ -1,25 +1,18 @@
 fx_version "cerulean"
+lua54 'yes'
+games { "gta5","rdr3" }
+rdr3_warning "I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships."
 
-description "Advanced React + Vite + Tailwind NUI Boilerplate"
 author "Bluxell Resources | Vidarr"
 version '1.0.0'
-repository 'https://github.com/bluxell/fivem-ui-boilerplate'
 
-extended_from "Project Error's React Boilerplate"
-extended_repo "https://github.com/project-error/fivem-react-boilerplate-lua"
-lua54 'yes'
+shared_script "shared/**/*"
+server_script "server/**/*"
+client_script "client/**/*"
 
-games {
-  "gta5",
-  "rdr3"
-}
+
 
 ui_page 'web/build/index.html'
-
-client_script "client/**/*"
-server_script "server/**/*"
-
 files {
-  'web/build/index.html',
   'web/build/**/*',
 }
